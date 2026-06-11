@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07080f"/>
+      <stop offset="100%" style="stop-color:#0d1018"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3de8df"/>
+      <stop offset="100%" style="stop-color:#9b7dff"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3de8df"/>
+      <stop offset="100%" style="stop-color:#9b7dff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#1c2232" stroke-width="18"/>
+  <!-- Progress arc (270 degrees) -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#ring)" stroke-width="18"
+    stroke-dasharray="942 1257" stroke-linecap="round"
+    transform="rotate(-90 256 256)"/>
+
+  <!-- Inner plate circle -->
+  <circle cx="256" cy="256" r="145" fill="#111520"/>
+  <circle cx="256" cy="256" r="145" fill="none" stroke="#1c2232" stroke-width="2"/>
+
+  <!-- Fork -->
+  <g transform="translate(180, 155)">
+    <rect x="18" y="0" width="8" height="80" rx="4" fill="url(#leaf)"/>
+    <rect x="8" y="0" width="6" height="45" rx="3" fill="url(#leaf)"/>
+    <rect x="28" y="0" width="6" height="45" rx="3" fill="url(#leaf)"/>
+    <rect x="11" y="42" width="24" height="6" rx="3" fill="url(#leaf)"/>
+  </g>
+
+  <!-- Leaf / plant -->
+  <g transform="translate(256, 200)">
+    <ellipse cx="0" cy="0" rx="38" ry="22" fill="url(#leaf)" transform="rotate(-30)" opacity="0.9"/>
+    <ellipse cx="20" cy="15" rx="32" ry="18" fill="url(#leaf)" transform="rotate(20)" opacity="0.8"/>
+    <line x1="0" y1="-5" x2="0" y2="60" stroke="#0d1018" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Knife -->
+  <g transform="translate(310, 155)">
+    <rect x="10" y="0" width="8" height="85" rx="4" fill="url(#leaf)" opacity="0.85"/>
+    <path d="M10 0 Q28 15 18 40 L10 40 Z" fill="url(#leaf)" opacity="0.7"/>
+  </g>
+
+  <!-- Text NUTRI -->
+  <text x="256" y="375" text-anchor="middle" font-family="'Arial Black', sans-serif"
+    font-size="52" font-weight="900" letter-spacing="6"
+    fill="url(#ring)">NUTRI</text>
+  <!-- Text AI -->
+  <text x="256" y="420" text-anchor="middle" font-family="'Arial Black', sans-serif"
+    font-size="28" font-weight="700" letter-spacing="12"
+    fill="#5a6278">AI</text>
+</svg>
