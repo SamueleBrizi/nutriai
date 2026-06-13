@@ -618,5 +618,4 @@ Rispondi SOLO con JSON valido senza markdown:
       `}</style>
     </div>
   );
-          }
-
+                                                                                                                                                                            }
