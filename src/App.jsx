@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
-const GROQ_KEY = "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";
+ const GROQ_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const C = {
   bg:"#07080f", surface:"#0d1018", card:"#111520", border:"#1c2232",
@@ -618,4 +618,5 @@ Rispondi SOLO con JSON valido senza markdown:
       `}</style>
     </div>
   );
-                                                                                                                                                                            }
+          }
+                                                                                                                                                         
